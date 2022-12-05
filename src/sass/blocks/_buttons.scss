@@ -1,0 +1,12 @@
+.btn {
+    display: inline-block;
+    width: 135px;
+    height: 45px;
+    background-color: $main_color;
+    margin-right: 44px;
+    border: none;
+    border-radius: 5px;
+    &:hover {
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.15);
+    }
+}
