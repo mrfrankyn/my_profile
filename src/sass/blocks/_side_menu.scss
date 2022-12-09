@@ -1,0 +1,34 @@
+.side_menu {
+    transform: rotate(-90deg);
+    width: 338px;
+    height: 24px;
+    position: absolute;
+    z-index: 3;
+    left: -120px;
+    top: 365px;
+    display: flex;
+    justify-content: space-between;
+    a {
+        // transform: rotate(90deg);
+        width: 20px;
+        height: 20px;
+    }
+    &__hovered {
+        &:hover {
+            svg path {
+                fill: $main_color;
+                transition: all 0.6s;
+            }
+        }
+    }
+    .cover {
+        transform: rotate(90deg);
+    }
+    &__divider {
+        width: 70px;
+        height: 1px;
+        background-color: black;
+        border: -1px solid #000000;
+        margin-top: 12px;  
+    }   
+}

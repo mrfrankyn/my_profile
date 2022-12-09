@@ -313,21 +313,6 @@ template {
   padding-top: 205px;
   position: relative;
 }
-.promo .circle {
-  position: relative;
-  z-index: 2;
-}
-.promo .circle::before {
-  content: "";
-  position: absolute;
-  width: 36px;
-  height: 36px;
-  border-radius: 20px;
-  background: #BEDAEF;
-  z-index: -1;
-  margin-left: -10px;
-  margin-top: -5px;
-}
 .promo h1 {
   width: 535px;
   margin-top: 10px;
@@ -437,6 +422,22 @@ template {
 }
 .hamburger #side_line {
   width: 30px;
+}
+
+.circle {
+  position: relative;
+  z-index: 2;
+}
+.circle::before {
+  content: "";
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  border-radius: 20px;
+  background: #BEDAEF;
+  z-index: -1;
+  margin-left: -10px;
+  margin-top: -5px;
 }
 
 .menu {
@@ -550,7 +551,7 @@ template {
   margin-left: 57px;
 }
 .about_me__subtitle {
-  margin-left: 12px;
+  margin-left: 20px;
 }
 .about_me .title {
   font-weight: 700;

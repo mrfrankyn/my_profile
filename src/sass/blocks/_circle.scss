@@ -1,0 +1,5 @@
+.circle {
+    position: relative;
+    @include circle;
+    z-index: 2;
+}

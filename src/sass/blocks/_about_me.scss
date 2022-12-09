@@ -1,0 +1,40 @@
+.about_me {
+    padding: 116px 0 124px 0;
+    &__img_profile {
+        width: 400px;
+        height: 600px;
+        margin-left: 11px;
+    }
+    // &__block {
+    //     display: grid;
+    //     grid-template-columns: repeat(auto-fit, minmax(400px, 500px));
+    // }
+    &__block {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__descr_block {
+        margin-left: 57px;
+    }
+    &__subtitle {
+        margin-left: 20px;
+        
+    }
+    .title {
+        font-weight: 700;
+        font-size: 36px;
+        margin-left: 11px;
+    }
+    span {
+        display: block;
+        width: 60px;
+        height: 2px;
+        background-color: $main_color;
+    }
+    &__descr {
+        margin-top: 28px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+    }
+}
