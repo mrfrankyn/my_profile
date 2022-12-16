@@ -307,17 +307,28 @@ template {
   margin: 0 auto;
 }
 
+.divider {
+  display: block;
+  width: 60px;
+  height: 2px;
+  background-color: #BEDAEF;
+  margin-top: 25px;
+}
+
 .promo {
   min-height: 100vh;
   background: url("../img/main_background_1.jpg") no-repeat 50%/cover;
   padding-top: 205px;
   position: relative;
 }
-.promo .circle {
-  position: relative;
-  z-index: 2;
+.promo h1 {
+  width: 535px;
+  margin-top: 10px;
 }
-.promo .circle::before {
+.promo__subtitle {
+  position: relative;
+}
+.promo__subtitle::before {
   content: "";
   position: absolute;
   width: 36px;
@@ -327,13 +338,6 @@ template {
   z-index: -1;
   margin-left: -10px;
   margin-top: -5px;
-}
-.promo h1 {
-  width: 535px;
-  margin-top: 10px;
-}
-.promo__subtitle {
-  position: relative;
 }
 .promo__btns {
   margin-top: 25px;
@@ -381,11 +385,35 @@ template {
   line-height: 60px;
 }
 
+.ft36_wh700 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 60px;
+}
+
+.ft20_wh700 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.ft12_wh500 {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.ft14_wh700 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+}
+
 .side_menu {
   transform: rotate(-90deg);
   width: 338px;
   height: 24px;
-  position: absolute;
+  position: fixed;
   z-index: 3;
   left: -120px;
   top: 365px;
@@ -439,13 +467,29 @@ template {
   width: 30px;
 }
 
+.circle {
+  position: relative;
+  z-index: 10;
+}
+.circle::before {
+  content: "";
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  border-radius: 20px;
+  background: #BEDAEF;
+  z-index: -1;
+  margin-left: -10px;
+  margin-top: -5px;
+}
+
 .menu {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: -100%;
   width: 100%;
   height: 100vh;
-  z-index: 10;
+  z-index: 12;
   visibility: hidden;
   opacity: 0;
   transition: all 0.6s;
@@ -535,7 +579,7 @@ template {
 }
 
 .about_me {
-  padding: 116px 0 124px 0;
+  padding-top: 116px;
 }
 .about_me__img_profile {
   width: 400px;
@@ -543,29 +587,210 @@ template {
   margin-left: 11px;
 }
 .about_me__block {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 400px 670px;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
 }
 .about_me__descr_block {
   margin-left: 57px;
 }
+.about_me__title {
+  margin-left: 20px;
+}
 .about_me__subtitle {
+  margin-top: 6px;
+}
+.about_me .divider {
   margin-left: 12px;
-}
-.about_me .title {
-  font-weight: 700;
-  font-size: 36px;
-  margin-left: 11px;
-}
-.about_me span {
-  display: block;
-  width: 60px;
-  height: 2px;
-  background-color: #BEDAEF;
+  margin-top: 7px;
 }
 .about_me__descr {
   margin-top: 28px;
   font-weight: 500;
   font-size: 14px;
   line-height: 21px;
+}
+.about_me__specialization {
+  display: grid;
+  grid-template: repeat(2, 1fr)/repeat(2, 260px);
+  margin-top: 32px;
+  gap: 20px 50px;
+  margin-left: 11px;
+}
+.about_me__specialization_item {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  width: 260px;
+}
+.about_me__specialization_icon {
+  width: 25px;
+  height: 24px;
+  margin-top: 10.5px;
+  margin-left: 5px;
+}
+.about_me__specialization_subtitle {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+}
+.about_me__specialization_descr {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.advantages {
+  margin-top: 124px;
+}
+.advantages .container {
+  padding: 0 65px 0 65px;
+}
+.advantages__title {
+  text-align: center;
+}
+.advantages__title::before {
+  content: "";
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  border-radius: 20px;
+  background: #BEDAEF;
+  z-index: -1;
+  margin-left: -10px;
+  margin-top: -5px;
+}
+.advantages__title:before {
+  left: 51.5%;
+  transform: translateX(-55%);
+}
+.advantages__subtitle {
+  text-align: center;
+  line-height: 60px;
+}
+.advantages .divider {
+  margin: 0 auto;
+  margin-top: 25px;
+}
+.advantages__block {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(425px, 425px));
+  -moz-column-gap: 136px;
+       column-gap: 136px;
+  margin-top: 60px;
+}
+.advantages__item {
+  width: 425px;
+  margin-left: 35px;
+  position: relative;
+}
+.advantages__item_subtitle::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-color: #BEDAEF;
+  position: absolute;
+  border-radius: 100%;
+  margin-top: 6px;
+  margin-left: -50px;
+}
+.advantages ul {
+  list-style-type: none;
+  position: relative;
+}
+.advantages ul::after {
+  content: "";
+  width: 1px;
+  position: absolute;
+  height: 100%;
+  background-color: #000;
+  top: -70px;
+  left: -43px;
+}
+.advantages ul li::after {
+  content: "";
+  width: 1px;
+  position: absolute;
+  height: 100%;
+  background-color: #000;
+  top: -18px;
+  left: -43px;
+}
+.advantages__block_wrapper {
+  display: grid;
+  grid-template-columns: 36px 1fr;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  margin-left: 10px;
+}
+.advantages .circle::after {
+  content: "";
+  width: 42px;
+  height: 1px;
+  background-color: #000;
+  transform: rotate(180deg);
+  position: absolute;
+  top: 35%;
+  left: -52px;
+}
+.advantages .ft14_wh700 {
+  margin: 0px;
+}
+.advantages__icon {
+  margin-top: 10.5px;
+  margin-left: 5px;
+}
+.advantages__text {
+  margin-top: 12px;
+  width: 375px;
+}
+
+.skills {
+  margin-top: 120px;
+}
+.skills__title {
+  text-align: center;
+}
+.skills__title::before {
+  content: "";
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  border-radius: 20px;
+  background: #BEDAEF;
+  z-index: -1;
+  margin-left: -10px;
+  margin-top: -5px;
+}
+.skills__title:before {
+  left: 50.8%;
+  transform: translateX(-55%);
+}
+.skills__subtitle {
+  text-align: center;
+}
+.skills .divider {
+  margin: 0 auto;
+  margin-top: 25px;
+}
+.skills__wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 270px));
+  gap: 13px 13px;
+  margin-top: 60px;
+}
+.skills__box {
+  width: 270px;
+  height: 270px;
+  padding: 30px 29px 25px 30px;
+  border: 1px solid #BEDAEF;
+}
+.skills #postgre_icon {
+  width: 65px;
+  height: 65px;
+}
+.skills h4 {
+  text-align: start;
+  margin-top: 20px;
 }/*# sourceMappingURL=style.css.map */

@@ -11,7 +11,14 @@
 .container {
     width: 1140px;
     margin: 0 auto;
-}   
+}
+.divider {
+    display: block;
+    width: 60px;
+    height: 2px;
+    background-color: $main_color;
+    margin-top: 25px;
+}
 @import 'blocks/promo';
 @import 'blocks/buttons';
 @import 'blocks/title';
@@ -20,5 +27,6 @@
 @import 'blocks/circle';
 @import 'blocks/menu';
 @import 'blocks/about_me';
-
+@import 'blocks/advantages';
+@import 'blocks/skills'
 

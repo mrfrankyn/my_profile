@@ -9,6 +9,7 @@
     }
     &__subtitle {
         position: relative;
+        @include circle;
     }   
     &__btns {
         margin-top: 25px;

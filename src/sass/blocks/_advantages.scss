@@ -1,0 +1,100 @@
+.advantages {
+    margin-top: 124px;
+    .container {
+        padding: 0 65px 0 65px;
+    }
+    &__title {
+        text-align: center;
+        @include circle;
+        &:before {
+            left: 51.5%;
+            transform: translateX(-55%);
+        }
+    }
+    &__subtitle {
+        text-align: center;
+        line-height: 60px;
+    }
+    .divider {
+        margin: 0 auto;
+        margin-top: 25px;
+    }
+    &__block {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(425px, 425px));
+        column-gap: 136px;
+        margin-top: 60px;
+    }
+    &__item {
+        width: 425px;
+        margin-left: 35px;
+        position: relative;
+        
+    }
+    &__item_subtitle {
+        &::before {
+            content: '';
+            width: 15px;
+            height: 15px;
+            background-color: $main-color;
+            position: absolute;
+            border-radius: 100%;
+            margin-top: 6px;
+            margin-left: -50px;
+        }
+    }
+    ul {
+        list-style-type: none;
+        position: relative;
+            &::after {
+                content: '';
+                width: 1px;
+                position: absolute;
+                height: 100%;
+                background-color: #000;
+                top: -70px;
+                left: -43px;
+            }
+            li {
+                &::after {
+                    content: '';
+                    width: 1px;
+                    position: absolute;
+                    height: 100%;
+                    background-color: #000;
+                    top: -18px;
+                    left: -43px;
+                }
+            }
+    }
+    &__block_wrapper {
+        display: grid;
+        grid-template-columns: 36px 1fr;
+        column-gap: 10px;
+        margin-left: 10px;
+    }
+    .circle {
+        &::after {
+            content: '';
+            width: 42px;
+            height: 1px;
+            background-color: #000;
+            transform: rotate(180deg);
+            position: absolute;
+            top: 35%;
+            left: -52px;
+        }
+    }
+    .ft14_wh700 {
+        margin: 0px;
+    }
+    &__icon {
+        margin-top: 10.5px;
+        margin-left: 5px;
+    }
+    &__text {
+        margin-top: 12px;
+        width: 375px;
+    } 
+}
+
