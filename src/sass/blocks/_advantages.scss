@@ -1,15 +1,10 @@
 .advantages {
     margin-top: 124px;
     .container {
-        padding: 0 65px 0 65px;
+        padding: 0 89px 0 65px;
     }
     &__title {
         text-align: center;
-        @include circle;
-        &:before {
-            left: 51.5%;
-            transform: translateX(-55%);
-        }
     }
     &__subtitle {
         text-align: center;
@@ -19,7 +14,7 @@
         margin: 0 auto;
         margin-top: 25px;
     }
-    &__block {
+    &__wrapper {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(425px, 425px));
         column-gap: 136px;
@@ -52,10 +47,11 @@
                 position: absolute;
                 height: 100%;
                 background-color: #000;
-                top: -70px;
+                top: -55px;
                 left: -43px;
             }
             li {
+                margin-top: 45px;
                 &::after {
                     content: '';
                     width: 1px;

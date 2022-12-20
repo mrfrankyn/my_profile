@@ -1,30 +1,47 @@
+.ft12_wh500 {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+}
+.ft14_wh500 {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+}
+.ft14_wh700 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+}
 .ft16_wh700 {
     font-weight: 700;
     font-size: 16px;
     line-height: 24px;
-}
-.ft48_wh700 {
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 60px;
-}
-.ft36_wh700 {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 60px;
 }
 .ft20_wh700 {
     font-weight: 700;
     font-size: 20px;
     line-height: 30px;
 }
-.ft12_wh500 {
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 18px;
-}
-.ft14_wh700 {
+.ft36_wh700 {
     font-weight: 700;
-    font-size: 14px;
-    line-height: 21px;
+    font-size: 36px;
+    line-height: 60px;
+}
+.ft48_wh700 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+}
+.title_circle {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    position: relative;
+    @include circle;
+    &::before {
+        content: '';
+        left: 51%;
+        transform: translateX(-50%);
+    }
 }

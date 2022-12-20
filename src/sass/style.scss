@@ -9,7 +9,7 @@
     padding: 0;
 }
 .container {
-    width: 1140px;
+    max-width: 1140px;
     margin: 0 auto;
 }
 .divider {
@@ -28,5 +28,6 @@
 @import 'blocks/menu';
 @import 'blocks/about_me';
 @import 'blocks/advantages';
-@import 'blocks/skills'
-
+@import 'blocks/skills';
+@import 'blocks/portfolio';
+@import 'blocks/pricelist';

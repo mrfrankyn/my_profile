@@ -1,0 +1,17 @@
+.pricelist {
+    &__title {
+        text-align: center;
+    }
+    &__subtitle {
+        text-align: center;
+    }
+    .divider {
+        margin: 0 auto;
+    }
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
+        justify-content: space-between;
+        margin-left: 50px;
+    }
+}
