@@ -1,4 +1,5 @@
 .pricelist {
+    margin-top: 60px;
     &__title {
         text-align: center;
     }
@@ -7,11 +8,45 @@
     }
     .divider {
         margin: 0 auto;
+        margin-top: 25px;
     }
     &__wrapper {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
+        grid-template-columns: repeat(auto-fit, minmax(366px, 366px));
         justify-content: space-between;
-        margin-left: 50px;
+        padding: 0 50px;
+        margin-top: 45px;
+    }
+    &__item {
+        display: grid;
+        row-gap: 0;
+        grid-template-columns: repeat(2, minmax(21, auto)) / repeat(2, auto);
+        grid-template-rows: 32px auto;
+        margin-top: 15px;
+        &::before {
+            content: "";
+            width: 15px;
+            height: 15px;
+            background-color: #bedaef;
+            position: absolute;
+            border-radius: 100%;
+            margin-top: 4px;
+            margin-left: -30px;
+        }
+    }
+    &__item_subtitle {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        margin: 0;
+    }
+    &__item_price {
+        grid-column: 2 / 2;
+        grid-row: 1 / 2;
+        justify-self: end;
+    }
+    &__item_descr {
+        grid-column: 1 / 3;
+        grid-row: 2 / 2;
+        line-height: 0;
     }
 }
