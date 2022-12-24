@@ -430,18 +430,25 @@
                     <div class="contacts__descr ft14_wh700">Или оставьте ваши данные и я сама вам напишу:</div>
                     <form action="#" class="contacts__form">
                         <div class="contacts__input">
-                            <input name="name" id="name" type="text">
+                            <input required placeholder="ФИО" name="name" id="name" type="text">
                             <label for="name" class="ft12_wh500">Ваше имя</label>
                         </div>
                         <div class="contacts__input">
-                            <input name="email" id="email" type="text">
+                            <input required placeholder="user@gmail.com" name="email" id="email" type="email">
                             <label for="email" class="ft12_wh500">Ваша почта</label>
                         </div>
                         <div class="contacts__textarea">
-                            <textarea name="text" id="text" type="text"></textarea>
+                            <textarea placeholder="Сообщение" name="text" id="text" type="text"></textarea>
                             <label for="text" class="ft12_wh500">Ваше сообщение</label>
                         </div>
-                        <button class="btn">Отправить сообщение</button>
+                        <div class="contacts__trigger">
+                            <button class="btn">Отправить сообщение</button>
+                            <div class="contacts__policy">
+                                <input required type="checkbox" class="trigger">
+                                <span class="contacts__policy_text ft12_wh500">Я согласен(а) с <a href="/policy.html">политикой конфиденциальности</a></span>
+                            </div>
+                        </div>
+                        </input>
                     </form>
                 </div>
             </div>
