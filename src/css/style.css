@@ -1107,5 +1107,6 @@ footer a {
   }
   .about_me__specialization {
     grid-template: 260px;
+    padding-right: 44px;
   }
 }/*# sourceMappingURL=style.css.map */
