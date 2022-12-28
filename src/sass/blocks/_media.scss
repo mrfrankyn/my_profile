@@ -1,0 +1,139 @@
+@media (max-width: 1320px) {
+    .side_menu {
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+        padding: 0 10px;
+    }
+    .about_me {
+        &__block {
+            grid-template-columns: repeat(1, minmax(400px, 400px)) repeat(1, minmax(500px, 500px));
+            justify-content: center;
+        }
+        &__descr_block {
+            margin-left: 27px;
+        }
+        &__specialization {
+            column-gap: 10px;
+            row-gap: 30px;
+            grid-template: repeat(3, 1fr) / repeat(1, 1fr);
+        }
+        &__specialization_item {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+    .ft36_wh700 {
+        font-size: 30px;
+    }
+    .about_me {
+        padding-top: 60px;
+        &__block {
+            grid-template-columns: repeat(1, minmax(300px, 300px)) repeat(1, minmax(420px, 420px));
+            column-gap: 10px;
+        }
+        &__img_profile {
+            width: 300px;
+            height: 500px;
+        }
+        &__descr {
+            margin-top: 20px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+    .promo__title {
+        width: 300px;
+        font-size: 28px;
+        line-height: 30px;
+    }
+    .about_me {
+        padding-top: 40px;
+        &__block {
+            grid-template-columns: 300px;
+            justify-items: center;
+        }
+        &__descr_block {
+            margin-top: 46px;
+            margin-left: 0px;
+        }
+        &__img_profile {
+            width: 280px;
+            height: 340px;  
+        }
+        &__subtitle{
+            font-size: 24px;
+            margin-top: 0px;
+            line-height: 40px;
+        }
+        &__specialization {
+            margin-top: 20px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 100%;
+        padding: 0 15px;
+    }
+    .promo {
+        &__title {
+            width: 280px;
+            font-size: 26px;
+            line-height: 39px;
+            margin-bottom: 0;
+        }
+        &__btns {
+            margin-top: 32px;
+        }
+        .btn {
+            font-size: 14px;
+        }
+        .hamburger {
+            right: 20px;
+            top: 40px;
+        }
+    }
+    .menu {
+        &__block {
+            width: 250px;
+        }
+        &__list {
+            padding-left: 15px;
+        }
+    }
+    .about_me {
+        &__img_profile {
+            margin: 0;
+        }
+        &__descr_block {
+            padding: 0 8px;
+        }
+        &__title {
+            margin-left: 8px;
+        }
+        &__subtitle {
+            margin-left: 0px;
+        }
+        .divider {
+            margin-left: 0px;
+        }
+        &__specialization {
+            grid-template: 260px;
+        }
+    }
+}
