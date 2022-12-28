@@ -4,11 +4,12 @@
         width: 400px;
         height: 600px;
         margin-left: 11px;
+        object-fit: cover;
     }
     // Основные блоки
     &__block {
         display: grid;
-        grid-template-columns: 400px 670px;
+        grid-template-columns: repeat(1, minmax(400px, 400px)) repeat(1, minmax(670px, 670px));
         column-gap: 40px;
     }
     // Блок описания
@@ -21,9 +22,10 @@
     }
     &__subtitle {
         margin-top: 6px;
+        margin-left: 14px;
     }
     .divider {
-        margin-left: 12px;
+        margin-left: 14px;
         margin-top: 7px;
     }
     &__descr {

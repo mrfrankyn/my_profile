@@ -1019,4 +1019,40 @@ footer a {
     margin-right: 5px;
     font-size: 9px;
   }
+}/*# sourceMappingURL=style.css.map */ 768px) {
+  .container {
+    max-width: 540px;
+  }
+  .promo__title {
+    width: 300px;
+    font-size: 28px;
+    line-height: 30px;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    width: 100%;
+    padding: 0 15px;
+  }
+  .promo__title {
+    font-size: 26px;
+    line-height: 39px;
+    margin-bottom: 0;
+  }
+  .promo__btns {
+    margin-top: 32px;
+  }
+  .promo .btn {
+    font-size: 14px;
+  }
+  .promo .hamburger {
+    right: 20px;
+    top: 40px;
+  }
+  .menu__block {
+    width: 250px;
+  }
+  .menu__list {
+    padding-left: 15px;
+  }
 }/*# sourceMappingURL=style.css.map */
