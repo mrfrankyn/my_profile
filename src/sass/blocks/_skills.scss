@@ -40,15 +40,15 @@
     }
     &__analytics_item {
         display: grid;
-        width: 350px;
-        height: 70px;
+        // width: 350px;
+        height: 69px;
         grid-template-columns: 315px 35px;
         row-gap: 28px;
     }
     &__analytics_item_subtitle {
         grid-column: 1 / 2;
         grid-row: 1 / 2;
-        width: 315px;
+        padding-left: 10px;
         &::before {
             top: -2px;
         }

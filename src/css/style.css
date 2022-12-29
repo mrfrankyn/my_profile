@@ -1019,40 +1019,69 @@ footer a {
     margin-right: 5px;
     font-size: 9px;
   }
-}/*# sourceMappingURL=style.css.map */column-gap: 10px;
-         column-gap: 10px;
+}/*# sourceMappingURL=style.css.map */lls__analytics_item {
+    grid-template-columns: 265px 35px;
   }
-  .about_me__img_profile {
+  .skills__analytics_item_scale {
     width: 300px;
-    height: 500px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+  .ft36_wh700 {
+    font-size: 30px;
+  }
+  .about_me {
+    padding-top: 60px;
+  }
+  .about_me__block {
+    grid-template-columns: repeat(1, minmax(300px, 300px)) repeat(1, minmax(420px, 420px));
+    -moz-column-gap: 8px;
+         column-gap: 8px;
   }
   .about_me__descr {
     margin-top: 20px;
+  }
+  .advantages__wrapper {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  .skills__wrapper {
+    justify-content: center;
+  }
+  .skills__analytics_wrapper {
+    margin-top: 40px;
   }
 }
 @media (max-width: 768px) {
   .container {
     max-width: 540px;
+    margin: 0 auto;
+  }
+  .ft36_wh700 {
+    font-size: 28px;
   }
   .promo__title {
     width: 300px;
-    font-size: 28px;
     line-height: 30px;
   }
   .about_me {
     padding-top: 40px;
   }
   .about_me__block {
-    grid-template-columns: 300px;
+    grid-template-columns: minmax(200px, 1fr);
     justify-items: center;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+  .about_me__img_profile {
+    height: 400px;
+    width: 100%;
   }
   .about_me__descr_block {
     margin-top: 46px;
     margin-left: 0px;
-  }
-  .about_me__img_profile {
-    width: 280px;
-    height: 340px;
   }
   .about_me__subtitle {
     font-size: 24px;
@@ -1062,15 +1091,21 @@ footer a {
   .about_me__specialization {
     margin-top: 20px;
   }
+  .advantages__wrapper {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
 }
 @media (max-width: 576px) {
   .container {
     width: 100%;
     padding: 0 15px;
   }
+  .ft36_wh700 {
+    font-size: 24px;
+    line-height: 36px;
+  }
   .promo__title {
     width: 280px;
-    font-size: 26px;
     line-height: 39px;
     margin-bottom: 0;
   }
@@ -1090,8 +1125,12 @@ footer a {
   .menu__list {
     padding-left: 15px;
   }
+  .about_me__block {
+    grid-template-columns: minmax(300px, 400px);
+  }
   .about_me__img_profile {
     margin: 0;
+    height: 350px;
   }
   .about_me__descr_block {
     padding: 0 8px;
@@ -1108,5 +1147,25 @@ footer a {
   .about_me__specialization {
     grid-template: 260px;
     padding-right: 44px;
+  }
+  .advantages {
+    margin-top: 46px;
+    padding: 0 8px;
+  }
+  .advantages__wrapper {
+    justify-items: center;
+    margin-top: 40px;
+  }
+  .advantages .divider {
+    margin-top: 15px;
+  }
+  .skills {
+    margin-top: 40px;
+  }
+  .skills .divider {
+    margin-top: 15px;
+  }
+  .skills__wrapper {
+    margin-top: 15px;
   }
 }/*# sourceMappingURL=style.css.map */
