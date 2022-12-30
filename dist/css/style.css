@@ -1019,24 +1019,80 @@ footer a {
     margin-right: 5px;
     font-size: 9px;
   }
-}/*# sourceMappingURL=style.css.map */) repeat(1, minmax(420px, 420px));
-    -moz-column-gap: 10px;
-         column-gap: 10px;
+}/*# sourceMappingURL=style.css.map */ grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
+    justify-content: center;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
   }
-  .about_me__img_profile {
+  .skills__analytics_item {
+    grid-template-columns: 265px 35px;
+  }
+  .skills__analytics_item_scale {
     width: 300px;
-    height: 500px;
+  }
+  .portfolio__wrapper {
+    justify-content: center;
+    gap: 20px;
+  }
+  .portfolio__img {
+    width: 280px;
+    height: 280px;
+  }
+  .pricelist__wrapper {
+    -moz-column-gap: 100px;
+         column-gap: 100px;
+  }
+  .contacts__form {
+    grid-template: 45px 190px 45px/repeat(2, 230px);
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+  .ft36_wh700 {
+    font-size: 30px;
+  }
+  .about_me {
+    padding-top: 60px;
+  }
+  .about_me__block {
+    grid-template-columns: repeat(1, minmax(300px, 300px)) repeat(1, minmax(420px, 420px));
+    -moz-column-gap: 8px;
+         column-gap: 8px;
   }
   .about_me__descr {
     margin-top: 20px;
+  }
+  .advantages__wrapper {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  .skills__wrapper {
+    justify-content: center;
+  }
+  .skills__analytics_wrapper {
+    margin-top: 40px;
+  }
+  .pricelist__wrapper {
+    -moz-column-gap: 100px;
+         column-gap: 100px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
+  }
+  .contacts__wrapper {
+    grid-template-columns: 200px 401px;
+    justify-items: center;
+  }
+  .contacts__form {
+    grid-template: 45px 190px 45px/repeat(2, 200px);
   }
 }
 @media (max-width: 768px) {
   .container {
     max-width: 540px;
+    margin: 0 auto;
   }
   .ft36_wh700 {
-    font-size: 28px;
+    font-size: 26px;
   }
   .promo__title {
     width: 300px;
@@ -1046,16 +1102,18 @@ footer a {
     padding-top: 40px;
   }
   .about_me__block {
-    grid-template-columns: 300px;
+    grid-template-columns: minmax(200px, 1fr);
     justify-items: center;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+  .about_me__img_profile {
+    height: 400px;
+    width: 100%;
   }
   .about_me__descr_block {
     margin-top: 46px;
     margin-left: 0px;
-  }
-  .about_me__img_profile {
-    width: 280px;
-    height: 340px;
   }
   .about_me__subtitle {
     font-size: 24px;
@@ -1065,6 +1123,52 @@ footer a {
   .about_me__specialization {
     margin-top: 20px;
   }
+  .advantages {
+    margin-top: 46px;
+  }
+  .advantages__wrapper {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    margin-top: 20px;
+  }
+  .advantages .divider {
+    margin-top: 15px;
+  }
+  .skills {
+    margin-top: 46px;
+  }
+  .skills .divider {
+    margin-top: 15px;
+  }
+  .skills__wrapper {
+    margin-top: 20px;
+  }
+  .portfolio {
+    margin-top: 46px;
+  }
+  .portfolio .divider {
+    margin-top: 15px;
+  }
+  .portfolio__wrapper {
+    margin-top: 20px;
+  }
+  .pricelist {
+    margin-top: 46px;
+  }
+  .pricelist .divider {
+    margin-top: 15px;
+  }
+  .pricelist__wrapper {
+    margin-top: 20px;
+  }
+  .pricelist__item {
+    margin-top: 4px;
+  }
+  .contacts {
+    margin-top: 40px;
+  }
+  .contacts__form {
+    grid-template: 45px 190px 45px/repeat(2, 300px);
+  }
 }
 @media (max-width: 576px) {
   .container {
@@ -1072,7 +1176,8 @@ footer a {
     padding: 0 15px;
   }
   .ft36_wh700 {
-    font-size: 26px;
+    font-size: 24px;
+    line-height: 36px;
   }
   .promo__title {
     width: 280px;
@@ -1095,8 +1200,12 @@ footer a {
   .menu__list {
     padding-left: 15px;
   }
+  .about_me__block {
+    grid-template-columns: minmax(300px, 400px);
+  }
   .about_me__img_profile {
     margin: 0;
+    height: 350px;
   }
   .about_me__descr_block {
     padding: 0 8px;
@@ -1119,6 +1228,39 @@ footer a {
     padding: 0 8px;
   }
   .advantages__wrapper {
+    justify-items: center;
+    margin-top: 40px;
+  }
+  .advantages .divider {
+    margin-top: 15px;
+  }
+  .skills {
+    margin-top: 40px;
+  }
+  .skills .divider {
+    margin-top: 15px;
+  }
+  .skills__wrapper {
+    margin-top: 15px;
+  }
+  .skills__analytics_item {
+    width: 290px;
+    grid-template-columns: 250px 35px;
+    padding: 0 8px;
+  }
+  .skills__analytics_item_scale {
     display: block;
+    width: 285px;
+    margin: 0 auto;
+  }
+  .portfolio {
+    margin-top: 46px;
+  }
+  .portfolio__wrapper {
+    row-gap: 20px;
+  }
+  .portfolio__img {
+    width: 280px;
+    height: 280px;
   }
 }/*# sourceMappingURL=style.css.map */
