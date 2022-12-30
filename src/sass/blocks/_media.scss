@@ -335,13 +335,15 @@
         }
         &__wrapper {
             justify-items: center;
-            grid-template-columns: minmax(300px, 1fr);
+            grid-template-columns: minmax(290px, 1fr);
+            padding: 0 8px;
         }
         &__img_profile {
             display: none;
         }
         .btn {
             margin-right: 7px;
+            width: 120px;
         }
     }
 }
