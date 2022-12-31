@@ -1019,7 +1019,15 @@ footer a {
     margin-right: 5px;
     font-size: 9px;
   }
-}/*# sourceMappingURL=style.css.map */ grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
+}/*# sourceMappingURL=style.css.map */ {
+    -moz-column-gap: 40px;
+         column-gap: 40px;
+  }
+  .skills__wrapper {
+    justify-content: center;
+  }
+  .skills__analytics_wrapper {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
     justify-content: center;
     -moz-column-gap: 20px;
          column-gap: 20px;
@@ -1042,8 +1050,15 @@ footer a {
     -moz-column-gap: 100px;
          column-gap: 100px;
   }
+  .contacts__wrapper {
+    grid-template-columns: 350px 501px;
+    justify-items: space-around;
+  }
   .contacts__form {
     grid-template: 45px 190px 45px/repeat(2, 230px);
+  }
+  .contacts__img_profile {
+    margin-left: 0px;
   }
 }
 @media (max-width: 992px) {
@@ -1079,11 +1094,15 @@ footer a {
     grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
   }
   .contacts__wrapper {
-    grid-template-columns: 200px 401px;
-    justify-items: center;
+    grid-template-columns: 300px 350px;
+    justify-content: space-between;
   }
   .contacts__form {
-    grid-template: 45px 190px 45px/repeat(2, 200px);
+    grid-template: 45px 190px 45px/repeat(2, 150px);
+  }
+  .contacts .btn {
+    width: 180px;
+    margin-right: 22px;
   }
 }
 @media (max-width: 768px) {
@@ -1166,8 +1185,14 @@ footer a {
   .contacts {
     margin-top: 40px;
   }
-  .contacts__form {
-    grid-template: 45px 190px 45px/repeat(2, 300px);
+  .contacts__wrapper {
+    grid-template-columns: 200px 320px;
+    justify-content: center;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+  .contacts .btn {
+    width: 150px;
   }
 }
 @media (max-width: 576px) {
@@ -1262,5 +1287,23 @@ footer a {
   .portfolio__img {
     width: 280px;
     height: 280px;
+  }
+  .contacts {
+    margin: 40px 0 40px 0;
+  }
+  .contacts__form {
+    grid-template: 45px 190px 50px/repeat(2, minmax(100px, 400px));
+  }
+  .contacts__wrapper {
+    justify-items: center;
+    grid-template-columns: minmax(290px, 1fr);
+    padding: 0 8px;
+  }
+  .contacts__img_profile {
+    display: none;
+  }
+  .contacts .btn {
+    margin-right: 7px;
+    width: 120px;
   }
 }/*# sourceMappingURL=style.css.map */

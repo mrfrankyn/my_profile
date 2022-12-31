@@ -23,6 +23,7 @@
         text-decoration: none;
         color: black;
         text-align: center;
+        transition: transform 2s;
     }
     .link {
         &:hover {

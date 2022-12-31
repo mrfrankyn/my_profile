@@ -73,3 +73,25 @@ const hover_img6 = document.querySelector('#id6')
     overlay.classList.toggle('overlay_active');            
     });
      
+
+$(document).ready(function() {
+  // mail sending
+  $('form').submit(function(e) {
+    // Предотвращаем действие браузера по умолчанию 
+    e.preventDefault();
+    // Отправка данных на сервер
+    $.ajax({
+      type: "POST",
+      url: "mailer/smart.php",
+      // Указываем данные, которые отправляем на сервер
+      data: $(this).serialize()
+    }).done(function() {
+      $(this).find("input").val("");
+
+
+      $('form').trigger('reset');
+    });
+    return false; 
+  });
+});  
+  
