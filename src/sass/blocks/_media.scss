@@ -66,13 +66,15 @@
         &__wrapper {
             grid-template-columns: 350px 501px;
             justify-items: space-around;
-            // column-gap: 20px;
         }
         &__form {
             grid-template: 45px 190px 45px / repeat(2, 230px);
         }
         &__img_profile {
             margin-left: 0px;
+        }
+        #checkbox-error {
+            margin-bottom: 60px;
         }
     }
 }
@@ -117,17 +119,16 @@
         &__wrapper {
             grid-template-columns: 300px 350px;
             justify-content: space-between;
-            // column-gap: 10px;
         }
         &__form {
             grid-template: 45px 190px 45px / repeat(2, 150px);
         }
-        // &__img_profile {
-        //     object-fit: scale-down;
-        // }
         .btn {
             width: 180px;
             margin-right: 22px;
+        }
+        #checkbox-error {
+            margin-bottom: 70px;
         }
     }
 }
@@ -212,9 +213,6 @@
     }
     .contacts {
         margin-top: 40px;
-        // &__form {
-        //     grid-template: 45px 190px 45px / repeat(2, 00px);
-        // }
         &__wrapper {
             grid-template-columns: 200px 320px;
             justify-content: center;
@@ -344,6 +342,9 @@
         .btn {
             margin-right: 7px;
             width: 120px;
+        }
+        #checkbox-error {
+            margin-bottom: 70px;
         }
     }
 }

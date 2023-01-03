@@ -62,7 +62,7 @@
             }
         }
     }
-    label {
+    .label {
         display: block;
         position: absolute;
         height: 18px;
@@ -70,6 +70,34 @@
         background-color: #fff;
         top: -8px;
         margin-left: 12px;
+    }
+    .obligation {
+        &::after {
+            content: " *";
+            color: red;
+        }
+    }
+    .error {
+        border-color: red;
+    }
+    #email-error, #name-error {
+        position: absolute;
+        color: red;
+        left: 0px;
+        top: -30px;
+        font-size: 12px; 
+    }
+    #checkbox-error {
+        position: absolute;
+        color: red;
+        font-size: 12px;
+        margin-bottom: 50px;
+    }
+    .policy_error {
+        position: absolute;
+        color: red;
+        font-size: 12px;
+        line-height: 10px;
     }
     .btn {
         width: 219px;
@@ -92,6 +120,9 @@
     &__policy {
         display: flex;
         align-items: center;
+    }
+    &__policy_text {
+        line-height: 14px;
     }
     .trigger {
         height: 11px;

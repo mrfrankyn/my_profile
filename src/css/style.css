@@ -315,6 +315,18 @@ template {
   margin-top: 25px;
 }
 
+.page_up {
+  display: none;
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  width: 40px;
+  height: 40px;
+}
+.page_up img {
+  width: 100%;
+}
+
 .promo {
   min-height: 100vh;
   background: url("../img/main_background_1.jpg") no-repeat 50%/cover;
@@ -876,11 +888,16 @@ template {
   outline-offset: 4px;
 }
 .portfolio__link img {
+  width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 .portfolio__link img:hover {
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.portfolio a, .portfolio #id3 {
+  height: 280px;
 }
 .portfolio .pointer {
   cursor: pointer;
@@ -1026,7 +1043,7 @@ template {
   transition: all 0.6s;
   border-color: #BEDAEF;
 }
-.contacts label {
+.contacts .label {
   display: block;
   position: absolute;
   height: 18px;
@@ -1034,6 +1051,32 @@ template {
   background-color: #fff;
   top: -8px;
   margin-left: 12px;
+}
+.contacts .obligation::after {
+  content: " *";
+  color: red;
+}
+.contacts .error {
+  border-color: red;
+}
+.contacts #email-error, .contacts #name-error {
+  position: absolute;
+  color: red;
+  left: 0px;
+  top: -30px;
+  font-size: 12px;
+}
+.contacts #checkbox-error {
+  position: absolute;
+  color: red;
+  font-size: 12px;
+  margin-bottom: 50px;
+}
+.contacts .policy_error {
+  position: absolute;
+  color: red;
+  font-size: 12px;
+  line-height: 10px;
 }
 .contacts .btn {
   width: 219px;
@@ -1056,6 +1099,9 @@ template {
 .contacts__policy {
   display: flex;
   align-items: center;
+}
+.contacts__policy_text {
+  line-height: 14px;
 }
 .contacts .trigger {
   height: 11px;
@@ -1134,6 +1180,9 @@ template {
   .contacts__img_profile {
     margin-left: 0px;
   }
+  .contacts #checkbox-error {
+    margin-bottom: 60px;
+  }
 }
 @media (max-width: 992px) {
   .container {
@@ -1177,6 +1226,9 @@ template {
   .contacts .btn {
     width: 180px;
     margin-right: 22px;
+  }
+  .contacts #checkbox-error {
+    margin-bottom: 70px;
   }
 }
 @media (max-width: 768px) {
@@ -1379,5 +1431,8 @@ template {
   .contacts .btn {
     margin-right: 7px;
     width: 120px;
+  }
+  .contacts #checkbox-error {
+    margin-bottom: 70px;
   }
 }/*# sourceMappingURL=style.css.map */

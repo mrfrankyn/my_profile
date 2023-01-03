@@ -1019,7 +1019,43 @@ footer a {
     margin-right: 5px;
     font-size: 9px;
   }
-}/*# sourceMappingURL=style.css.map */ {
+}/*# sourceMappingURL=style.css.map */rigger {
+  height: 11px;
+  width: 11px;
+  margin-right: 10px;
+}
+.contacts__hovered:hover svg path {
+  fill: #BEDAEF;
+  transition: all 0.6s;
+}
+
+@media (max-width: 1320px) {
+  .side_menu {
+    display: none;
+  }
+}
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+    padding: 0 10px;
+  }
+  .about_me__block {
+    grid-template-columns: repeat(1, minmax(400px, 400px)) repeat(1, minmax(500px, 500px));
+    justify-content: center;
+  }
+  .about_me__descr_block {
+    margin-left: 27px;
+  }
+  .about_me__specialization {
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+    row-gap: 30px;
+    grid-template: repeat(3, 1fr)/repeat(1, 1fr);
+  }
+  .about_me__specialization_item {
+    width: 100%;
+  }
+  .advantages__wrapper {
     -moz-column-gap: 40px;
          column-gap: 40px;
   }
@@ -1059,6 +1095,9 @@ footer a {
   }
   .contacts__img_profile {
     margin-left: 0px;
+  }
+  .contacts #checkbox-error {
+    margin-bottom: 60px;
   }
 }
 @media (max-width: 992px) {
@@ -1103,6 +1142,9 @@ footer a {
   .contacts .btn {
     width: 180px;
     margin-right: 22px;
+  }
+  .contacts #checkbox-error {
+    margin-bottom: 70px;
   }
 }
 @media (max-width: 768px) {
@@ -1305,5 +1347,8 @@ footer a {
   .contacts .btn {
     margin-right: 7px;
     width: 120px;
+  }
+  .contacts #checkbox-error {
+    margin-bottom: 70px;
   }
 }/*# sourceMappingURL=style.css.map */

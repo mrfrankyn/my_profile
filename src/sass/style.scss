@@ -3,6 +3,9 @@
 @import 'base/media';
 @import 'base/mixins';
 
+// html {
+//     scroll-behavior: smooth;
+// }
 * { 
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -18,6 +21,17 @@
     height: 2px;
     background-color: $main_color;
     margin-top: 25px;
+}
+.page_up {
+    display: none;
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    width: 40px;
+    height: 40px;
+    img {
+        width: 100%;
+    }
 }
 @import 'blocks/promo';
 @import 'blocks/buttons';
