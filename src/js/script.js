@@ -175,6 +175,13 @@ function smoothScroll(event) {
   });
 }
 
-new WOW().init();
+wow = new WOW( {
+  boxClass: 'wow',
+  animateClass: 'animated',
+  mobile: false
+}
+)
+wow.init();
+// new WOW().init();
 const scroll = new SmoothScroll('a[href*="#"]');
 
