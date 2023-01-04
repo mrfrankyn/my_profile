@@ -140,6 +140,10 @@ $(document).ready(function() {
   //   scrollTop: scrollPosition
   //   }, animationDuration);
   // });
+  $(".wow").each(function() {
+    var wowHeight = $(this).height();
+    $(this).attr("data-wow-offset", wowHeight);
+  });
 }); 
 
 // Get the button:

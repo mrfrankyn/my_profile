@@ -1019,8 +1019,7 @@ footer a {
     margin-right: 5px;
     font-size: 9px;
   }
-}/*# sourceMappingURL=style.css.map */rigger {
-  height: 11px;
+}/*# sourceMappingURL=style.css.map */ight: 11px;
   width: 11px;
   margin-right: 10px;
 }
@@ -1151,6 +1150,9 @@ footer a {
   .container {
     max-width: 540px;
     margin: 0 auto;
+  }
+  .ft48_wh700 {
+    font-size: 48px;
   }
   .ft36_wh700 {
     font-size: 26px;
